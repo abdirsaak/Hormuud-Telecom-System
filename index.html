@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Hormuud Telecom System</title>
+</head>
+<body>
+    
+<!-- ...............................Qeebta Hori ee laga galo EVEPLUS............... -->
+    <div class="container mx-auto   m-10"id='contaier1'>
+        <div class="bg-blue-400 mx-20 h-96 w-96 flex justify-center items-center">
+            <div class="p-2">
+                <img class="w-32 ml-28" src="./images/download-removebg-preview (6).png" alt="hormuud logo png">
+                <h1 class="text-white px-6 py-10 text-2xl">Welcome To Hormud Telecom</h1>
+                <input  class="w-80 h-10 ml-6
+                 outline-none p-2 rounded-lg shadow-lg" type="text" placeholder="Gali *770#" id="inputEnterPin">
+
+                <button id="btnSend"class="w-80 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+            </div>
+        </div>
+    </div></br>
+
+
+    <!-- ..................................Qeebta EvePLUS Pin-ka ...................... -->
+
+    <div class="container hidden"id="container2">
+        <div class="bg-blue-400 mx-20 h-96 w-96 flex justify-center items-center">
+            <div class="p-2 mx-auto">
+               <h1 class="text-center text-white text-3xl pb-2">-EVCPLUS-</h1>
+               <P class="text-white text-center text-2xl pb-2">Fadaln geli PIN-Kaaga</P>
+               <input class="w-80 h-10 ml-6
+                outline-none p-2 rounded-lg shadow-lg" type="number"placeholder="Fadaln Geli PIN-Kaaga"id="geliPin-kaaga">
+               <button id="btnSend2"class="w-80 h-10 bg-green-400 ml-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- ..................Qeebta Adeegyada Hormuud Telecom......................... -->
+    <div class="container hidden"id="container3">
+        <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4">
+            <div class="p-2">
+
+                <h1 class="text-center py-4 px-6 text-white text-2xl">Welcome To Hormud Telecom</h1>
+
+                <h1 class="px-6 py-2 text-white text-lg">1.Itus Haraaga</h1>
+                <h1 class="px-6 py-2 text-white text-lg">2.Kaarka hadalka</h1>
+                <h1 class="px-6 py-2 text-white text-lg">3.Bıxı bııl</h1>
+                <h1 class="px-6 py-2 text-white text-lg">4.Uwareejı EVCPLUS</h1>
+                <h1 class="px-6 py-2 text-white text-lg">5.warbıxın kooban</h1>
+                <h1 class="px-6 py-2 text-white text-lg">6.Salaam bank</h1>
+                <h1 class="px-6 py-2 text-white text-lg">7.Kordhi xisaabtaada</h1>
+                <h1 class="px-6 py-2 text-white text-lg">8.Maareynta</h1>
+                <h1 class="px-6 py-2 text-white text-lg">9.Bill Payment</h1>
+
+
+
+                <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Dooro Adeega aad rabto" id="inputDooro">
+
+                <button id="btnSend3" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ..................................Qeebta Haraagaaga....................................... -->
+   <div class="container hidden"id="container4">
+       <div class="bg-blue-400 mx-20 mt-20 h-full w-96 flex mb-4">
+           <div class="p-2">
+               <h1 class="text-white text-3xl text-center pl-10">[-EVCPLUS-]</h1>
+               <h1 id="haragag"></h1>
+
+           </div>
+       </div>
+   </div>
+
+
+<!-- .......................Qeebta Kaarka Hadalka.................. -->
+   
+   <div class="container hidden"id="container5">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+<h1 class="text-white text-3xl text-center">Kaarka Hadalka</h1>
+<h1 id="KuShuboAirtime"></h1>
+<h1 id="uguShubAirtime"></h1>
+<h1 id="MIFIPacheges"></h1>
+<h1 id="KUshuboInternet"></h1>
+<h1 id="uguShubQofkle"></h1>
+<input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Dooro Adeega aad rabto">
+<button class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ................Bixi biil..................... -->
+ 
+<div class="container hidden"id="container6">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+            <h1 class="text-white text-3xl text-center pl-10">Bixi Biil</h1>
+            <h1 id="postPaiud"></h1>
+            <h1 id="kuIibso"></h1>
+
+<input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Dooro Adeega aad rabto">
+<button class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- .................QEEBTA uwareeji EVCPLUS........................ -->
+<div class="container hidden"id="container7">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+            
+            <h1 class="text-white text-3xl text-center pl-10">Uwareeji EVCPLUS</h1>
+            <h1 id = "galiNumberka"></h1>
+            <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Gali mobil-ka" id="galiMobil-ka">
+            <button id="btn4" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+            
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container hidden"id="container8">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+            
+            <h1 class="text-white text-3xl text-center pl-10">Uwareeji EVCPLUS</h1>
+            <h1 class="text-white text-lg pl-10 pt-2">Fadlan geli lacgta</h1>
+            <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Gali lacgta" id="galilacgta">
+            <button id="btn5" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+            
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container hidden"id="container9">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+          <h1 id="mahubtaa"></h1>
+          <h1 id="Haa"></h1>
+          <h1 id="Maya"></h1>
+          
+          <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Gali Adeega aad rabto" id="haaWanhubaa">
+          <button id="btn6" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container hidden"id="container10">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+          <h1 id="weyBaxdayLacgta"></h1>
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ........................Qeebta warbic kooban......................... -->
+<div class="container hidden"id="container11">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+         <h1 class="text-white text-2xl text-cneter">Warbixin kooban</h1>
+         <h1 id="lastAction"></h1>
+         <h1 id="wareejintiUguDanbeytay"></h1>
+         <h1 id="iibashadiUguDanbeytay"></h1>
+         <h1 id="last3Action"></h1>
+         <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Dooro Adeega aad rabto">
+<button class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+</div>
+        </div>
+    </div>
+
+</div>  
+
+
+
+<!-- ..............................Qeebta salaam bank/...................................... -->
+<div class="container hidden"id="container12">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+         <h1 class="text-white text-2xl text-cneter">Salaam Bank</h1>
+         <h1 id="kawareejiEvcplus"></h1>
+         <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Gali Adeega aad rabto" id="kawaarejiEvcplusToSalamBak">
+          <button id="btn7" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+         
+         
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container hidden"id="container13">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+         <h1 class="text-white text-2xl text-cneter">Fadlan Dooro xisaabtaada bankiga</h1>
+         <h1 id="salaamSomaliaBnak"></h1>
+         <h1 id="salaamSOH"></h1>
+         <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Gali Adeega aad rabto" id="kawaarejiEvcplusToSalamBak">
+          <button id="btn7" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+         
+         
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- ...........................Korhdu xisaabtaada ............................. -->
+
+
+<div class="container hidden"id="container14">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+         <h1 class="text-white text-3xl text-cneter">Kordhi xisaabtaada</h1>
+       
+
+         <form action="mailto:rasaaq883.com" method="post" enctype="text/plain"id="forms">
+      
+            <input id="getting" class="w-3/4 h-10 mx-6 outline-none p-2 mt-2 rounded-lg shadow-lg"placeholder = "Geli magacaaga 1aad" type="text" name="name"><br>
+          
+            <input id="getting" class="w-3/4 h-10 mx-6 outline-none p-2 mt-2 rounded-lg shadow-lg"placeholder = "Geli magacaaga 2aad"  type="text" name="name"><br>
+           
+            <input id="getting" class="w-3/4 h-10 mx-6 outline-none p-2 mt-2 rounded-lg shadow-lg"placeholder = "Geli magacaaga 3aad"  type="text" name="name"><br>
+            
+         </form>
+
+          <button id="btn8" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+         
+         
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="container hidden"id="container15">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+         <h1 id="waalaguuKordhiyey"></h1>
+          <button id="btn9" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Ok</button>
+
+         
+         
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- ..........................Maareynta.............................. -->
+
+
+<div class="container hidden"id="container16">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+            <h1 class="text-white text-3xl text-center">Maareynta</h1>
+         <h1 id="bedelNumberSirta"></h1>
+         <h1 id="bedelLuqada"></h1>
+         <h1 id="wargeliMobilelumay"></h1>
+         <h1 id="lacagXirasho"></h1>
+         <h1 id="uceliLacagQaldanty"></h1>
+         <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Gali Adeega aad rabto" id="haaWanhubaa">
+          <button id="btn10" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+         
+         
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="container hidden"id="container17">
+    <div class="bg-blue-400 mx-20 h-full w-96 flex mb-4 ">
+        <div class="p-2 ">
+            <h1 class="text-white text-3xl text-center">EVCPLUS</h1>
+         <h1 id="itusHraagaBilka"></h1>
+         <h1 id="wadaBixiBiilka"></h1>
+         <h1 id="qeybKabixiBilka"></h1>
+        
+         <input  class="w-3/4 h-10 mx-6 outline-none p-2 rounded-lg shadow-lg" type="number" placeholder="Fadlan Gali Adeega aad rabto" id="biil">
+          <button id="btn11" class="w-2/3 h-10 bg-green-400 mx-6 outline-none text-white rounded-lg transition shadow-lg my-6 hover:bg-green-300">Send</button>
+
+         
+         
+</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
