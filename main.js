@@ -66,6 +66,11 @@ const container15 = document.getElementById('container15')
 const container16 = document.getElementById('container16')
 const container17 = document.getElementById('container17')
 
+// .......................... sub container.......................
+
+const sub_container5_1 =  document.querySelector('#sub_container5_1')
+const sub_container5_2 =  document.querySelector('#sub_container5_2')
+
 
 btnSend3.addEventListener('click', () => {
     //  haraagaaga();
@@ -108,20 +113,22 @@ btnSend3.addEventListener('click', () => {
         container3.style.display = "none";
         container4.style.display= "none"
 
-        uguShubAirtime.innerText = "2- Ugu shub airtime"
+        uguShubAirtime.innerText = "1- Ugu shub airtime"
         uguShubAirtime.classList = 'text-white text-lg pl-10 pt-2'
 
-        MIFIPacheges.innerText = "3- MIFI pacheges"
+        MIFIPacheges.innerText = "2- MIFI pacheges"
         MIFIPacheges.classList = 'text-white text-lg pl-10 pt-2'
 
-        KUshuboInternet.innerText = "4- Ku shub internet"
+        KUshuboInternet.innerText = "3- Ku shub internet"
         KUshuboInternet.classList = 'text-white text-lg pl-10 pt-2'
 
-        uguShubQofkle.innerText = "5- Ugu shub qof kale"
+        uguShubQofkle.innerText = "4- Ugu shub qof kale"
         uguShubQofkle.classList = 'text-white text-lg pl-10 pt-2'
+        
+        
 
 
-    }else if(inputDooro.value === num3){
+    } else if(inputDooro.value === num3){
         // ...................Qeebta Bixi biilka..........................
 
 
@@ -261,7 +268,44 @@ btnSend3.addEventListener('click', () => {
 
    inputDooro.value = '';
 })
+// ................................. ka shaqeenta kaarta ku hadalka.....................
+const btn_kaarkuhadal = document.querySelector('#Kaardka_kuhadal')
+btn_kaarkuhadal.addEventListener('click', () => {
+    const KuShuboAirtime_selection = 1
+    if (KuShuboAirtime_selection == 1){
+        sub_container5_1.style.display = 'block'
+        
+        container5.style.display = "none";
+        container3.style.display = "none";
+        container4.style.display= "none"
+    }
 
+
+})
+const sub_btn_1 = document.querySelector('#sub_btn_1')
+sub_btn_1.addEventListener('click', () => {
+    
+   
+    sub_container5_2.style.display = 'block'
+    sub_container5_1.style.display = 'none'
+        
+    container5.style.display = "none";
+    container3.style.display = "none";
+    container4.style.display= "none"
+
+})
+
+const sub_btn_2 = document.querySelector('#sub_btn_2')
+
+sub_btn_2.addEventListener('click', () => {
+    const ma_hubta  = document.querySelector('#ma_hubta')
+    const kushubo_aritme_input = document.querySelector('#kushubo_aritme_input')
+    geli_lacagta = kushubo_aritme_input.value
+
+    ma_hubta.innerHTML = 'Ma Hubtaa inaad ' + geli_lacagta  + ' ugu shubtid undefined'
+    ma_hubta.classList = "text-white text-lg pl-10 pt-2"
+               
+})
 
 
 //.......................Kashaqeeynta Uwareeji EVCPLUS.....................
@@ -318,6 +362,8 @@ const btn6 = document.getElementById('btn6')
 btn6.addEventListener('click', () => {
     let hadi1Ladoorto = haaWanHubaa.value;
     const weyBaxdayLacgta = document.getElementById('weyBaxdayLacgta')
+    const galilacgta = document.getElementById('galilacgta');
+    let balance = 40 
 
     if(hadi1Ladoorto === '1'){
         let numbers = galiMobilKa.value;
@@ -325,7 +371,9 @@ btn6.addEventListener('click', () => {
         container10.style.display = "block"
         container9.style.display = "none"
         container8.style.display = "none"
-       weyBaxdayLacgta.innerText = ('waxaad numberkan ' + numbers + ' lacag dhan ' + hubinLacgta + ' haraagaagu waa 0')
+    
+        let send_balance = galilacgta - balance
+       weyBaxdayLacgta.innerText = ('waxaad numberkan ' + numbers + ' lacag dhan ' + hubinLacgta + ' haraagaagu waa ' + send_balance)
        weyBaxdayLacgta.classList = "text-white text-lg pl-10 pt-2"
     }else if(hadi1Ladoorto === '2'){
         container9.style.display = "none"
